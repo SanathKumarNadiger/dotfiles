@@ -50,8 +50,10 @@ return {
     },
     {
         "lukas-reineke/indent-blankline.nvim",
+        main = "ibl",
+        opts = {},
         config = function()
-            require("cfg.indent_blankline").setup()
+            require("cfg.ibl").setup()
         end,
     },
     {
