@@ -208,4 +208,16 @@ return {
         end,
         dependencies = { { 'nvim-tree/nvim-web-devicons', 'ColaMint/pokemon.nvim' } }
     },
+    {
+        "sourcegraph/sg.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        config = function()
+            require("sg").setup()
+        end
+
+    },
+    {
+        'Exafunction/codeium.vim',
+        event = 'BufEnter'
+    },
 }
